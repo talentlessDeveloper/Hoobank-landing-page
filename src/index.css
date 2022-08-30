@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+@layer components {
+  html {
+    @apply scroll-smooth;
+  }
+
+  .hoo-container {
+    @apply max-w-7xl mx-6 sm:mx-16;
+  }
+
+  .pink-gradient {
+    @apply before:absolute before:bg-gradient-to-r before:from-[#f4c4f3] before:to-[#fc67fa]   before:blur-[900px];
+  }
+
+  .after-gradient {
+    @apply after:absolute after:bg-gradient-to-r after:from-[#fff] after:z-0 after:to-[#fff] after:w-full after:h-full  after:blur-[750px];
+  }
+
+  .feature-card:hover {
+    background: var(--black-gradient);
+    box-shadow: var(--card-shadow);
+  }
+
+  .feature-bg {
+    background: var(--black-gradient);
+    box-shadow: var(--card-shadow);
+  }
+}
