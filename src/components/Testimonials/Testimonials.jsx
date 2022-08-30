@@ -8,7 +8,7 @@ import useAnimate from "../../util/useAnimate";
 function Testimonials() {
   const { ref, childVariants, variants, control } = useAnimate({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.1,
   });
 
   return (
