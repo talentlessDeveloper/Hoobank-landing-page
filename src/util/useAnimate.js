@@ -10,7 +10,7 @@ function useAnimate(options = { triggerOnce: true, threshold: 0.3 }) {
     onScreen: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.25,
       },
     },
   };
