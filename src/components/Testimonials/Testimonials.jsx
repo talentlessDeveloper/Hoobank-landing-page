@@ -6,7 +6,7 @@ import Quotes from "./Quotes";
 import useAnimate from "../../util/useAnimate";
 
 function Testimonials() {
-  const { ref, childVariants, variants, control } = useAnimate({
+  const { ref, childVariants, childVariantsX, variants, control } = useAnimate({
     triggerOnce: true,
     threshold: 0.1,
   });
@@ -35,7 +35,7 @@ function Testimonials() {
             anywhere on the planet.
           </motion.p>
         </div>
-        <Quotes variants={childVariants} />
+        <Quotes variants={childVariantsX} />
         <Companies variants={childVariants} />
       </div>
     </motion.section>

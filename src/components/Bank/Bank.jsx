@@ -15,22 +15,22 @@ function Bank() {
     <motion.section
       initial="offScreen"
       animate={control}
-      ref={ref}
       variants={variants}
+      ref={ref}
     >
       <div className="hoo-container pb-10 md:py-14 lg:pt-0 lg:pb-[170px]">
         <div className="flex flex-col font-poppins lg:flex-row lg:justify-between lg:items-center">
           <div className="max-w-xl">
             <motion.h2
-              className="font-semibold text-white text-[2.5rem] leading-[160%] lg:text-5xl lg:leading-[160%]"
               variants={childVariantsX}
+              className="font-semibold text-white text-[2.5rem] leading-[160%] lg:text-5xl lg:leading-[160%]"
             >
               Find a better card deal in few easy steps.
             </motion.h2>
 
             <motion.p
-              className="text-dimWhite text-lg leading-[160%] mt-5  lg:mt-6"
               variants={childVariantsX}
+              className="text-dimWhite text-lg leading-[160%] mt-5  lg:mt-6"
             >
               Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
               aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
@@ -42,7 +42,7 @@ function Bank() {
           </div>
 
           <div className="mt-10 max-w-lg lg:mt-0 ">
-            <motion.img src={card} alt="billing" variants={childVariantsX} />
+            <motion.img src={card} alt="billing" />
           </div>
         </div>
       </div>

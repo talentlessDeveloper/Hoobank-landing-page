@@ -50,13 +50,15 @@ function Product() {
             </div>
           </div>
 
-          <motion.div
-            className="mt-10 relative max-w-[33.125rem] lg:mt-0"
-            variants={childVariants}
-          >
-            <img src={bill} alt="bill" className="relative z-10" />
+          <div className="mt-10 relative max-w-[33.125rem] lg:mt-0">
+            <motion.img
+              src={bill}
+              alt="bill"
+              className="relative z-10"
+              variants={childVariants}
+            />
             <div className="pink-gradient absolute w-1/2 h-1/2 z-0 bg-gradient-to-r from-[#fff] to-[#fff]  blur-[750px] -left-[15.15rem] top-[0]  ss:-left-[25rem] ss:-top[5rem] lg:h-full lg:w-full lg:-left-[40rem] lg:-top-[100px] before:-bottom-[4.8rem] before:w-full before:h-full lg:before:-bottom-[12rem]"></div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </motion.section>
