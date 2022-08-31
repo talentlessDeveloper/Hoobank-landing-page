@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import useAnimate from "../../util/useAnimate";
 
 function Footer() {
-  const { ref, variants, childVariants, control } = useAnimate({
+  const { ref, variants, childVariantsX, control } = useAnimate({
     triggerOnce: true,
     threshold: 0.6,
   });
@@ -24,18 +24,18 @@ function Footer() {
               src={logo}
               alt="Hoobank Logo"
               className="h-8 w-32 md:w-[16.625rem] md:h-[4.5rem]"
-              variants={childVariants}
+              variants={childVariantsX}
             />
             <motion.p
               className="text-dimWhite text-lg mt-4 leading-[30.8px] max-w-[19.5rem] md:mt-9"
-              variants={childVariants}
+              variants={childVariantsX}
             >
               A new way to make the payments easy, reliable and secure.
             </motion.p>
           </div>
-          <FooterLinks variants={childVariants} />
+          <FooterLinks variants={childVariantsX} />
         </div>
-        <FooterSocials variants={childVariants} />
+        <FooterSocials variants={childVariantsX} />
       </div>
     </motion.footer>
   );

@@ -10,7 +10,7 @@ function useAnimate(options = { triggerOnce: true, threshold: 0.3 }) {
     onScreen: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.5,
+        staggerChildren: 0.2,
       },
     },
   };
@@ -18,7 +18,7 @@ function useAnimate(options = { triggerOnce: true, threshold: 0.3 }) {
   const childVariants = {
     offScreen: {
       opacity: 0,
-      y: 200,
+      y: 50,
     },
 
     onScreen: {
@@ -32,12 +32,10 @@ function useAnimate(options = { triggerOnce: true, threshold: 0.3 }) {
   const childVariantsX = {
     offScreen: {
       opacity: 0,
-      x: -200,
     },
 
     onScreen: {
       opacity: 1,
-      x: 0,
       transition: {
         duration: 0.5,
       },
